@@ -1,0 +1,34 @@
+{
+    "name": "xenokore/template",
+    "version": "1.0.0",
+    "type": "library",
+    "description": "Twig wrapper",
+    "keywords": ["xeno", "app"],
+    "homepage": "https://xenokore.com",
+    "license": "MIT",
+    "authors": [{
+        "name": "Yani B.",
+        "email": "yani@xenokore.com",
+        "homepage": "https://xenokore.com",
+        "role": "Developer"
+    }],
+    "autoload": {
+        "psr-4": {
+            "Xenokore\\Template\\": "src/"
+        },
+        "classmap": ["src/"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Xenokore\\Template\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^7.3",
+        "xenokore/utility": "^1",
+        "twig/twig": "^2.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.1@dev"
+    }
+}
